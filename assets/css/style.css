@@ -153,4 +153,70 @@ p {
         margin-bottom: 20px;
     } 
 
+/* For medium size screens size from 768px wide and down */
+
+@media only screen and (max-width:768px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .heading {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem; 
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 1.2rem;  
+    }
+    
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .start-game {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1.2rem; 
+        width: 90px;
+        height: 35px;
+    } 
+
+    .try-area-center {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .submit-area {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .cloned-area-left {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }    
+
+    .cloned-area-center {
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+  
+    .cloned-area-right {
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+
+}
+
+
 }
