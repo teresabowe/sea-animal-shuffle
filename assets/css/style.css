@@ -218,5 +218,50 @@ p {
 
 }
 
+/* For smaller size screens size from 480px wide and down */
+
+@media only screen and (max-width:480px) {
+    
+    .heading {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.1rem; 
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 1rem;  
+    }
+    
+    img {
+        width: 75px;
+        height: 75px;
+    }
+
+    img {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        border: 1px solid  rgb(226, 244, 250);
+        border-radius: 10%;
+        padding: 5px;
+    }
+
+    .start-game {
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem; 
+        width: 80px;
+        height: 25px;
+        margin-top: 5px;
+    } 
+
+}
 
 }
