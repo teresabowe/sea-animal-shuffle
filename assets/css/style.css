@@ -117,3 +117,40 @@ p {
     background-color: rgb(229, 233, 235);
 }
 
+/* media queries */
+
+/* For larger to medium size screens size from 1024px wide and down */
+
+@media only screen and (max-width:1024px) {
+      
+    .heading {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem; 
+        margin-bottom: 10px;
+    }
+    
+    h3 {
+        font-size: 1rem;  
+        margin-top: 65px;
+    }
+    
+    p {
+        font-size: 1.2rem;  
+    }
+    
+    img {
+        width: 75px;
+        height: 75px;
+    }
+
+    button {
+        font-size: 1.2rem; 
+        width: 90px;
+        height: 35px;
+        margin-bottom: 20px;
+    } 
+
+}
