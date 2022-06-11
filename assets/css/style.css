@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+/* --------- Global style */
+
+body {
+    background-color: white;
+    font-family: 'Fredoka', sans-serif;
+    color: #445361;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 20% auto 20% auto;
+    gap: 0rem;
+}
