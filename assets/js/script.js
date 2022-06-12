@@ -27,7 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('3').onclick = toggleImage;
     document.getElementById('4').onclick = toggleImage; 
 
-
+    const submitButton = document.getElementById("submit");
+    submitButton.addEventListener("click", function() {
+        checkAnswer(shuffle);
+    }); 
 });
 
 /* Apply Fisher-Yates algorithm to shuffle sea animals.
@@ -78,6 +81,12 @@ console.log(seaAnimals);
 
 };
 
-
-
+function checkAnswer(shuffle) {
+    
+    console.log("Selection from user")
+    console.log(seaAnimals);
+    console.log("Selection from shuffle")
+    console.log(shuffle);
+    
+};
 
