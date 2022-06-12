@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", function() {
     arrayForShuffle = ['crab','octopus','seahorse','fish']; //array to be shuffled
     let shuffle = arrayShuffle(arrayForShuffle);
     console.log(shuffle);
+
+    document.getElementById('1').onclick = toggleImage;
+    document.getElementById('2').onclick = toggleImage;
+    document.getElementById('3').onclick = toggleImage;
+    document.getElementById('4').onclick = toggleImage; 
+
+
 });
 
 /* Apply Fisher-Yates algorithm to shuffle sea animals.
@@ -25,5 +32,11 @@ function  arrayShuffle(arrayToShuffle) {
     }
     return arrayToShuffle;
 };
+
+function toggleImage() {
+    console.log("Function to toggle image")
+};
+
+
 
 
