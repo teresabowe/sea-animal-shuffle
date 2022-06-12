@@ -153,6 +153,10 @@ function changeImageId(item) {
 
 // Create and increment clones
 function incrementClone() {
+    if (imageChoiceId >= 1026) {
+        alert(`You have tried to guess the sequence more than 25 times without any luck!  Start a new game by clicking on the start button.`);
+        throw `Aborting game!`;
+    } else {
     imageChoiceId++;
     let clonedElement = document.querySelector(".cloned-area-center");
     let seaAnimalsElement = document.querySelector(".try-area-center");
@@ -161,4 +165,5 @@ function incrementClone() {
     clonedImages.classList = "answer-area";
     clonedImages.querySelectorAll('img').forEach(changeImageId);
     clonedElement.appendChild(clonedImages);
-}; 
+    }; 
+};
