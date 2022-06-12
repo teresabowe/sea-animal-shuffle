@@ -88,19 +88,19 @@ function checkAnswer(shuffle) {
     console.log("Selection from shuffle")
     console.log(shuffle);
 
-    //clone seaAnimals (user choice) to prepare for cleaning and comparisons with shuffle (computer choice)
+    // Clone seaAnimals (user choice) to prepare for cleaning and comparisons with shuffle (computer choice)
     console.log("Clone seaAnimals");
     var cloneSeaAnimals = [...seaAnimals];
     console.log(cloneSeaAnimals);
 
-    //tidy up user choice cloneSeaAnimals
+    // Tidy up user choice cloneSeaAnimals
     console.log("Clean seaAnimals down to sea animal name only");
     cloneSeaAnimals = cloneSeaAnimals.map(x=>x.substring(14, x.length));
     cloneSeaAnimals = cloneSeaAnimals.map(x=>x.substring(0, x.length -4));
     console.log("After edit of user guess cloneSeaAnimals");
     console.log(cloneSeaAnimals);
 
-    // Compares each element of the arrays
+    // Compare each element of the arrays
     for (let j = 0; j < 4; j++) {
         if (shuffle[j] === cloneSeaAnimals[j]) {
             document.getElementById(j + 1).style.border = "thick solid #50C878";
