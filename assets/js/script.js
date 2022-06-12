@@ -117,5 +117,16 @@ function checkAnswer(shuffle) {
         });
     };
 
+    // Check if the arrays are the same
+    // https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript
+    Array.prototype.equals = function (array) {
+        for (var i = 0, l=this.length; i < l; i++) {
+            if (this[i] != array[i]) { 
+                return false;   
+            };           
+        };      
+        return true;
+    };
+
 };
 
