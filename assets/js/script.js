@@ -13,7 +13,7 @@ console.log(seaAnimals);
 var counter = 1;
 
 // Wait for the DOM to finish loading before running the game
-// call shuffle function
+// Call shuffle function
 // Add onclick event for toggleImage
 
 document.addEventListener("DOMContentLoaded", function() {
