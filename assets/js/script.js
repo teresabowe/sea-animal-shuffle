@@ -109,5 +109,13 @@ function checkAnswer(shuffle) {
         };
     };
 
+    // Find elements from the first array that are not contained in the second array
+    // https://bobbyhadz.com/blog/javascript-get-difference-between-two-arrays
+    function getDifference(a, b) {
+        return a.filter(element => {
+          return !b.includes(element);
+        });
+    };
+
 };
 
