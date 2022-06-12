@@ -46,21 +46,21 @@ function  arrayShuffle(arrayToShuffle) {
     return arrayToShuffle;
 };
 
+
+// Adapted from https://stackoverflow.com/questions/25291730/change-images-on-click-cycle-through-3-images
+
 function toggleImage() {
     if(counter == 0){
         this.src = "assets/images/fish.png";
-        counter++;
-        
+        counter++;    
     }
     else if(counter == 1){
         this.src = "assets/images/octopus.png";
-        counter++;
-        
+        counter++;    
     }
     else if(counter == 2){
         this.src = "assets/images/crab.png";
-        counter++;
-        
+        counter++;   
     }
     else {
         this.src = "assets/images/seahorse.png";
