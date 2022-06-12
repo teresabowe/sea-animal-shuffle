@@ -93,5 +93,12 @@ function checkAnswer(shuffle) {
     var cloneSeaAnimals = [...seaAnimals];
     console.log(cloneSeaAnimals);
 
+    //tidy up user choice cloneSeaAnimals
+    console.log("Clean seaAnimals down to sea animal name only");
+    cloneSeaAnimals = cloneSeaAnimals.map(x=>x.substring(14, x.length));
+    cloneSeaAnimals = cloneSeaAnimals.map(x=>x.substring(0, x.length -4));
+    console.log("After edit of user guess cloneSeaAnimals");
+    console.log(cloneSeaAnimals);
+
 };
 
