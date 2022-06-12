@@ -10,6 +10,8 @@ var seaAnimals = [
 console.log("Show seaAnimals")
 console.log(seaAnimals);
 
+var counter = 1;
+
 // Wait for the DOM to finish loading before running the game
 // call shuffle function
 
@@ -45,10 +47,33 @@ function  arrayShuffle(arrayToShuffle) {
 };
 
 function toggleImage() {
-    console.log("Function to toggle image");
+    if(counter == 0){
+        this.src = "assets/images/fish.png";
+        counter++;
+        
+    }
+    else if(counter == 1){
+        this.src = "assets/images/octopus.png";
+        counter++;
+        
+    }
+    else if(counter == 2){
+        this.src = "assets/images/crab.png";
+        counter++;
+        
+    }
+    else {
+        this.src = "assets/images/seahorse.png";
+        counter = 0;
+    };
 
+console.log("seaAnimals before splice") ;  
+console.log(seaAnimals);
 
+seaAnimals.splice(this.id-1, 1, (document.getElementById(this.id).getAttribute("src")));
 
+console.log("seaAnimals after splice");
+console.log(seaAnimals);
 
 };
 
