@@ -130,7 +130,8 @@ function checkAnswer(shuffle) {
     };
 
     if ((getDifference(shuffle, cloneSeaAnimals).length) != 0) {
-        alert(`Oops!! Choose one of each sea animal i.e. ${getDifference(shuffle, cloneSeaAnimals)}`);         
+        alert(`Oops!! Choose one of each sea animal i.e. ${getDifference(shuffle, cloneSeaAnimals)}`);  
+        incrementClone();           
     }  else if (shuffle.equals(cloneSeaAnimals)) 
         { alert(`Well Done!!! You chose all of the correct sea animals.  Click "Start" to start a new game.`);  
         document.getElementById("submit").disabled = true;
@@ -140,7 +141,24 @@ function checkAnswer(shuffle) {
         document.getElementById('4').onclick = null; 
     }  else {
         alert(`Hard luck! try again to see if you can guess correctly!`);
+        incrementClone();    
     };
 
 };
 
+// Add image choice id to user choice to identify and keep the clone unique
+function changeImageId(item) {
+    item.id = item.id + "x" + imageChoiceId
+    };
+
+// Create and increment clones
+function incrementClone() {
+    imageChoiceId++;
+    let clonedElement = document.querySelector(".cloned-area-center");
+    let seaAnimalsElement = document.querySelector(".try-area-center");
+    let clonedImages = seaAnimalsElement.cloneNode(true);
+    clonedImages.id = imageChoiceId;
+    clonedImages.classList = "answer-area";
+    clonedImages.querySelectorAll('img').forEach(changeImageId);
+    clonedElement.appendChild(clonedImages);
+}; 
