@@ -87,6 +87,11 @@ function checkAnswer(shuffle) {
     console.log(seaAnimals);
     console.log("Selection from shuffle")
     console.log(shuffle);
-    
+
+    //clone seaAnimals (user choice) to prepare for cleaning and comparisons with shuffle (computer choice)
+    console.log("Clone seaAnimals");
+    var cloneSeaAnimals = [...seaAnimals];
+    console.log(cloneSeaAnimals);
+
 };
 
