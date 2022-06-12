@@ -100,5 +100,14 @@ function checkAnswer(shuffle) {
     console.log("After edit of user guess cloneSeaAnimals");
     console.log(cloneSeaAnimals);
 
+    // Compares each element of the arrays
+    for (let j = 0; j < 4; j++) {
+        if (shuffle[j] === cloneSeaAnimals[j]) {
+            document.getElementById(j + 1).style.border = "thick solid #50C878";
+        } else {
+            document.getElementById(j + 1).style.border = "thick solid #FF0000 ";
+        };
+    };
+
 };
 
