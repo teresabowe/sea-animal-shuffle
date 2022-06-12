@@ -1,3 +1,14 @@
+// create global default seaAnimals array for updating in toggleImages
+const baseImageURL = "assets/images/";
+var seaAnimals = [
+    `${baseImageURL}fish.png`,
+    `${baseImageURL}octopus.png`,
+    `${baseImageURL}crab.png`,
+    `${baseImageURL}seahorse.png`
+];
+
+console.log("Show seaAnimals")
+console.log(seaAnimals);
 
 // Wait for the DOM to finish loading before running the game
 // call shuffle function
@@ -34,7 +45,11 @@ function  arrayShuffle(arrayToShuffle) {
 };
 
 function toggleImage() {
-    console.log("Function to toggle image")
+    console.log("Function to toggle image");
+
+
+
+
 };
 
 
