@@ -42,7 +42,7 @@ __Game Results__
 - Once the user has selected the correct sequence, the alert will congratulate the user, and the images are highlighted in green.
 
 ![Alert-Successful selection](/docs/successful-selection.png)
-- 
+
 ![Green-border](/docs/successful-selection-green-border.png)
 
 - At this point, the image onclick and submit button click are disabled. The user can click the start button to reload the page to begin a new game.
@@ -53,6 +53,7 @@ __Game Results__
 ### Features Left to Implement
 
 Add an additional level where the number of images presented to the user is five.
+
 
 
 
