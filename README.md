@@ -50,7 +50,9 @@ __Game Results__
 
 ![After 26 trys](/docs/finish-game.png)
 
+### Features Left to Implement
 
+Add an additional level where the number of images presented to the user is five.
 
 
 
