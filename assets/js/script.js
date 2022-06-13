@@ -10,7 +10,6 @@ var seaAnimals = [
 console.log("Show seaAnimals")
 console.log(seaAnimals);
 
-var counter = 1;
 var imageChoiceId = 1000;
 
 // Wait for the DOM to finish loading before running the game
