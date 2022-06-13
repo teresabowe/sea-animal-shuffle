@@ -48,7 +48,9 @@ __Game Results__
 - At this point, the image onclick and submit button click are disabled. The user can click the start button to reload the page to begin a new game.
 - The game terminates if the user does not guess the correct sequence within 26 trys.
 
-![After 26 trys](/docs/cloned-area.png)
+![After 26 trys](/docs/finish-game.png)
+
+
 
 
 
