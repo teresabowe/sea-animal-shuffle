@@ -130,7 +130,37 @@ __Mobile__
 ### Unfixed Bugs
 At the time of writing this readme file, there was no known bugs.
 
+## Deployment
 
+- This site has been deployed to Github pages.  To deploy a project the following steps are necessary:
+
+    - From repository list select the repository being deployed.
+    - Select the settings tab for that repository.
+    - Click on the Pages tab and find the Source section.
+    - Click on the dropdown and select the Main branch.
+    - The live link will be shown once the deployment is complete.
+
+The live link is available on: https://teresabowe.github.io/sea-animal-shuffle/
+
+## Credits
+
+### Content
+
+- Understanding and adapting code for Fisher-Yates array shuffle from [All Things JavaScript](https://www.youtube.com/watch?v=myL4xmtAVtw).
+
+- Initially adapted to create image toggle from [Stack Overflow](https://stackoverflow.com/questions/25291730/change-images-on-click-cycle-through-3-images).  This code was later replaced with my code to remove a bug.
+
+- Code used to find missing elements from two arrays from [Borislav Hadzhiev](https://bobbyhadz.com/blog/javascript-get-difference-between-two-arrays). 
+
+- Code used to compare two arrays from [Stack Overflow](https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript).
+
+### Media
+
+The sea animal images are from the [Flaticon](https://flaticon.com/) website.  Specifically, these are:
+- [Crab Image](<https://www.flaticon.com/free-icons/crab">) created by Freepik - Flaticon.
+- [Octopus Image](<https://www.flaticon.com/free-icons/octopus>) created by Freepik - Flaticon.
+- [Fish Image](https://www.flaticon.com/free-icons/fish) created by shmai and Freepik - Flaticon.
+- [Seahorse](https://www.flaticon.com/free-icons/seahorse) created by BZZRINCANTATION - Flaticon.
 
 
 
