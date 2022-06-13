@@ -50,6 +50,8 @@ function  arrayShuffle(arrayToShuffle) {
     return arrayToShuffle;
 };
 
+
+// Toggle through images and update seaAnimals array
 function toggleImage() {
            
     if(this.src.includes(`${baseImageURL}fish.png`)) {
