@@ -7,8 +7,6 @@ var seaAnimals = [
     `${baseImageURL}seahorse.png`
 ];
 
-console.log("Show seaAnimals")
-console.log(seaAnimals);
 
 var imageChoiceId = 1000;
 
@@ -64,35 +62,18 @@ function toggleImage() {
         this.src = `${baseImageURL}fish.png`;
     };
 
-console.log("seaAnimals before splice") ;  
-console.log(seaAnimals);
-
 seaAnimals.splice(this.id-1, 1, (document.getElementById(this.id).getAttribute("src")));
-
-console.log("seaAnimals after splice");
-console.log(seaAnimals);
-
 };
 
 function checkAnswer(shuffle) {
     
-    console.log("Selection from user")
-    console.log(seaAnimals);
-    console.log("Selection from shuffle")
-    console.log(shuffle);
-
     // Clone seaAnimals (user choice) to prepare for cleaning and comparisons with shuffle (computer choice)
-    console.log("Clone seaAnimals");
     var cloneSeaAnimals = [...seaAnimals];
-    console.log(cloneSeaAnimals);
-
+    
     // Tidy up user choice cloneSeaAnimals
-    console.log("Clean seaAnimals down to sea animal name only");
     cloneSeaAnimals = cloneSeaAnimals.map(x=>x.substring(14, x.length));
     cloneSeaAnimals = cloneSeaAnimals.map(x=>x.substring(0, x.length -4));
-    console.log("After edit of user guess cloneSeaAnimals");
-    console.log(cloneSeaAnimals);
-
+    
     // Compare each element of the arrays
     for (let j = 0; j < 4; j++) {
         if (shuffle[j] === cloneSeaAnimals[j]) {
