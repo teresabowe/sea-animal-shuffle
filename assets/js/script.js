@@ -16,7 +16,7 @@ var imageChoiceId = 1000;
 
 document.addEventListener("DOMContentLoaded", function() {
 
-    arrayForShuffle = ['crab','octopus','seahorse','fish']; //array to be shuffled
+    let arrayForShuffle = ['crab','octopus','seahorse','fish']; //array to be shuffled
     let shuffle = arrayShuffle(arrayForShuffle);
     console.log(shuffle);
 
