@@ -115,6 +115,8 @@ __Javascript__
 
 ### Lighthouse Assessment
 
+The Chrome Lighthouse tool was used to check performance, accessibility, best proctice, and SEO. The current results are shown below:
+
 __Desktop__
 
 ![Lighthouse desktop report](/docs/lighthouse-desktop-report.png)
