@@ -104,6 +104,25 @@ Direct image replacement method.
 
 ![Solution using direct replacement method](/docs/toggle-image-using-direct-replacement.png)
 
+### Validator Testing
+
+__HTML__
+- When the code is passed through the official W3C Validator, there are currently no errors or warnings showing.
+__CSS__
+- When the code is passed through the official CSS W3C Jigsaw Validator, there are currently no errors showing. There is one warning stating that "Imported style sheets are not checked in direct input and file upload modes". I understand that this is related to the use of Google Fonts font family.
+__Javascript__
+- When the code is passed through the official JSHint validator, there are currently no errors or warnings showing.
+
+### Lighthouse Assessment
+
+__Desktop__
+
+![Lighthouse desktop report](/docs/lighthouse-desktop-report.png)
+
+__Mobile__
+
+![Lighthouse mobile report](/docs/lighthouse-mobile-report.png)
+
 
 
 
