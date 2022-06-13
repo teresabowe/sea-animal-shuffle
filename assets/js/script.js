@@ -126,7 +126,11 @@ function changeImageId(item) {
 function incrementClone() {
     if (imageChoiceId >= 1026) {
         alert(`You have tried to guess the sequence more than 25 times without any luck!  Start a new game by clicking on the start button.`);
-        throw `Aborting game!`;
+        document.getElementById("submit").disabled = true;
+        document.getElementById('1').onclick = null;
+        document.getElementById('2').onclick = null;
+        document.getElementById('3').onclick = null;
+        document.getElementById('4').onclick = null; 
     } else {
     imageChoiceId++;
     let clonedElement = document.querySelector(".cloned-area-center");
