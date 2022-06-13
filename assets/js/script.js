@@ -51,25 +51,16 @@ function  arrayShuffle(arrayToShuffle) {
     return arrayToShuffle;
 };
 
-
-// Adapted from https://stackoverflow.com/questions/25291730/change-images-on-click-cycle-through-3-images
-
 function toggleImage() {
-    if(counter == 0){
-        this.src = "assets/images/fish.png";
-        counter++;    
-    }
-    else if(counter == 1){
-        this.src = "assets/images/octopus.png";
-        counter++;    
-    }
-    else if(counter == 2){
-        this.src = "assets/images/crab.png";
-        counter++;   
-    }
-    else {
-        this.src = "assets/images/seahorse.png";
-        counter = 0;
+           
+    if(this.src.includes(`${baseImageURL}fish.png`)) {
+        this.src = `${baseImageURL}octopus.png`;
+    } else if(this.src.includes(`${baseImageURL}octopus.png`)) {
+        this.src =`${baseImageURL}crab.png`;
+    } else if(this.src.includes(`${baseImageURL}crab.png`)) {
+        this.src = `${baseImageURL}seahorse.png`;
+    } else if(this.src.includes(`${baseImageURL}seahorse.png`)) {
+        this.src = `${baseImageURL}fish.png`;
     };
 
 console.log("seaAnimals before splice") ;  
