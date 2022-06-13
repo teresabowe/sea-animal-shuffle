@@ -92,6 +92,8 @@ Browser testing was completed on the three primary desktop browsers.  The result
 | Microsoft Edge Version 102.0.1245.39  |     Yes             |     Yes                 | Virtual device |
 | Firefox Version 101.0.1               |     Yes             |     Yes                 | Virtual device |
 
+### Features Testing
+
 ### Bugs
 
 During development and testing, it became apparent that the toggleImage function was not performing as it should. The problem arose when the counter number was equal to the counter number on the if/if else statement while at the same time the image previously selected was the same as that shown on the if/if else statement. The impact for the user was that they would need to click twice to move the image along. While it would be intuitive for the user to click twice if the image did not change, it was decided to attempt to fix this issue. The best solution was to replace the counter and the if statement section of the toggleImage function with a simpler method of changing the image. The changes are shown in the code snippet below.
@@ -125,7 +127,8 @@ __Mobile__
 
 ![Lighthouse mobile report](/docs/lighthouse-mobile-report.png)
 
-
+### Unfixed Bugs
+At the time of writing this readme file, there was no known bugs.
 
 
 
