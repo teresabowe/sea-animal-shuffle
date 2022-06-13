@@ -7,7 +7,7 @@ var seaAnimals = [
     `${baseImageURL}seahorse.png`
 ];
 
-
+// Start counter for cloned image choices
 var imageChoiceId = 1000;
 
 // Wait for the DOM to finish loading before running the game
