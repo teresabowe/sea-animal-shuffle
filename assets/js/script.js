@@ -120,7 +120,7 @@ function checkAnswer(shuffle) {
 // Add image choice id to user choice to identify and keep the clone unique
 function changeImageId(item) {
     item.id = item.id + "x" + imageChoiceId;
-    };
+    }
 
 // Create and increment clones
 function incrementClone() {
