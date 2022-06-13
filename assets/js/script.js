@@ -46,8 +46,7 @@ function  arrayShuffle(arrayToShuffle) {
         arrayToShuffle[newPos] = temp; 
     }
     return arrayToShuffle;
-};
-
+}
 
 // Toggle through images and update seaAnimals array
 function toggleImage() {
@@ -60,10 +59,10 @@ function toggleImage() {
         this.src = `${baseImageURL}seahorse.png`;
     } else if(this.src.includes(`${baseImageURL}seahorse.png`)) {
         this.src = `${baseImageURL}fish.png`;
-    };
+    }
 
 seaAnimals.splice(this.id-1, 1, (document.getElementById(this.id).getAttribute("src")));
-};
+}
 
 function checkAnswer(shuffle) {
     
@@ -80,8 +79,8 @@ function checkAnswer(shuffle) {
             document.getElementById(j + 1).style.border = "thick solid #50C878";
         } else {
             document.getElementById(j + 1).style.border = "thick solid #FF0000 ";
-        };
-    };
+        }
+    }
 
     // Find elements from the first array that are not contained in the second array
     // https://bobbyhadz.com/blog/javascript-get-difference-between-two-arrays
@@ -89,7 +88,7 @@ function checkAnswer(shuffle) {
         return a.filter(element => {
           return !b.includes(element);
         });
-    };
+    }
 
     // Check if the arrays are the same
     // https://stackoverflow.com/questions/7837456/how-to-compare-arrays-in-javascript
@@ -97,8 +96,8 @@ function checkAnswer(shuffle) {
         for (var i = 0, l=this.length; i < l; i++) {
             if (this[i] != array[i]) { 
                 return false;   
-            };           
-        };      
+            }          
+        }     
         return true;
     };
 
@@ -115,13 +114,12 @@ function checkAnswer(shuffle) {
     }  else {
         alert(`Hard luck! try again to see if you can guess correctly!`);
         incrementClone();    
-    };
-
-};
+    }
+}
 
 // Add image choice id to user choice to identify and keep the clone unique
 function changeImageId(item) {
-    item.id = item.id + "x" + imageChoiceId
+    item.id = item.id + "x" + imageChoiceId;
     };
 
 // Create and increment clones
@@ -138,5 +136,5 @@ function incrementClone() {
     clonedImages.classList = "answer-area";
     clonedImages.querySelectorAll('img').forEach(changeImageId);
     clonedElement.appendChild(clonedImages);
-    }; 
-};
+    }
+}
