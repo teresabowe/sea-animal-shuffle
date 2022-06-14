@@ -103,8 +103,8 @@ Browser testing was completed on the three primary desktop browsers.  The result
 |                           |                                           | Images have new border, green for correct and red for incorrect 
 |                           |                                           | Image selection attempt is cloned 
 |                           |                                           | The game continues 
-|                           | Click on submit with missing sea animal   | User receives alert indicating incorrect selection            
-|                           | but incorrect sequence                    | Images have new border, green for correct and red for incorrect            
+|                           | Click on submit with missing sea animal but incorrect sequence   | User receives alert indicating incorrect selection            
+|                           |                                           | Images have new border, green for correct and red for incorrect            
 |                           |                                           | Image selection attempt is cloned               
 |                           |                                           | The game continues 
 |                           | Click on submit with all chosen correctly | User receives alert indicating correct selection               
