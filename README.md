@@ -47,9 +47,9 @@ __Game Results__
 ![Green-border](/docs/successful-selection-green-border.png)
 
 - At this point, the image onclick and submit button click are disabled. The user can click the start button to reload the page to begin a new game.
-- The game terminates if the user does not guess the correct sequence within 26 trys.
+- The game terminates if the user does not guess the correct sequence within 26 attempts.
 
-![After 26 trys](/docs/finish-game.png)
+![After 26 attempts](/docs/finish-game.png)
 
 ### Features Left to Implement
 
