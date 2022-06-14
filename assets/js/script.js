@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let arrayForShuffle = ['crab','octopus','seahorse','fish']; //array to be shuffled
     let shuffle = arrayShuffle(arrayForShuffle);
-    console.log(shuffle);
 
     document.getElementById('1').onclick = toggleImage;
     document.getElementById('2').onclick = toggleImage;
