@@ -95,6 +95,27 @@ Browser testing was completed on the three primary desktop browsers.  The result
 
 ### Features Testing
 
+| Feature                   | Action                                    | Effect             
+| :------------             |   :---                                    |   :---           
+| Start a new game          | Click start button                        | The page is refreshed and a new game can begin 
+| Toggle images             | Click on an image                         | The image toggles to the next image  
+| Submit image selection    | Click on submit with missing sea animal   | User receives alert indicating missing sea animal 
+|                           |                                           | Images have new border, green for correct and red for incorrect 
+|                           |                                           | Image selection attempt is cloned 
+|                           |                                           | The game continues 
+|                           | Click on submit with missing sea animal   | User receives alert indicating incorrect selection            
+|                           | but incorrect sequence                    | Images have new border, green for correct and red for incorrect            
+|                           |                                           | Image selection attempt is cloned               
+|                           |                                           | The game continues 
+|                           | Click on submit with all chosen correctly | User receives alert indicating correct selection               
+|                           |                                           | Images have new border, all green for correct 
+|                           |                                           | Onclick for images and submit button are disabled           
+|                           |                                           | User can click on start button to start a new game    
+|                           | Click on submit on 26th attempt           | User receives alert indicating they have submitted over 25 times            
+|                           |                                           | Onclick for images and submit button are disabled            
+|                           |                                           |  User can click on start button to start a new game               
+
+
 ### Bugs
 
 During development and testing, it became apparent that the toggleImage function was not performing as it should. The problem arose when the counter number was equal to the counter number on the if/if else statement while at the same time the image previously selected was the same as that shown on the if/if else statement. The impact for the user was that they would need to click twice to move the image along. While it would be intuitive for the user to click twice if the image did not change, it was decided to attempt to fix this issue. The best solution was to replace the counter and the if statement section of the toggleImage function with a simpler method of changing the image. The changes are shown in the code snippet below.
@@ -107,7 +128,7 @@ Direct image replacement method.
 
 ![Solution using direct replacement method](/docs/toggle-image-using-direct-replacement.png)
 
-### Validator Testing
+### Validator Testing 
 
 __HTML__
 - When the code is passed through the official W3C Validator, there are currently no errors or warnings showing.
