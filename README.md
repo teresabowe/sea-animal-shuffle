@@ -181,7 +181,7 @@ The live link is available on: https://teresabowe.github.io/sea-animal-shuffle/
 ### Media
 
 The sea animal images are from the [Flaticon](https://flaticon.com/) website.  Specifically, these are:
-- [Crab Image](<https://www.flaticon.com/free-icons/crab">) created by Freepik - Flaticon.
+- [Crab Image](<https://www.flaticon.com/free-icons/crab>) created by Freepik - Flaticon.
 - [Octopus Image](<https://www.flaticon.com/free-icons/octopus>) created by Freepik - Flaticon.
 - [Fish Image](https://www.flaticon.com/free-icons/fish) created by shmai and Freepik - Flaticon.
 - [Seahorse](https://www.flaticon.com/free-icons/seahorse) created by BZZRINCANTATION - Flaticon.
